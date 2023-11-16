@@ -1,0 +1,42 @@
+ion-card {
+  width: calc(50% - 10px); /* Calcula el ancho para dos tarjetas en una fila con espacio entre ellas */
+  margin: 0 5px; /* Añade un pequeño espacio entre las tarjetas */
+  display: inline-block; /* Permite que las tarjetas se muestren en línea */
+  max-height: 50%;
+  box-sizing: border-box; /* Asegura que el ancho incluya el espacio del margen y el relleno */
+}
+
+ion-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+ion-card-title {
+  font-size: 14px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+ion-card-button {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+ion-button{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin:30px 20px;
+
+}
+
+ion-card-subtitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
