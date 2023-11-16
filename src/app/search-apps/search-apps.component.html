@@ -1,0 +1,20 @@
+<!-- search-apps.component.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Buscar Aplicaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="terminoBusqueda" (ionChange)="buscarAplicaciones()"></ion-searchbar>
+
+  <ion-list *ngIf="aplicacionesEncontradas.length > 0">
+    <ion-item *ngFor="let app of aplicacionesEncontradas">
+      {{ app }}
+    </ion-item>
+  </ion-list>
+
+  <p *ngIf="aplicacionesEncontradas.length === 0 && terminoBusqueda.trim() !== ''">
+    No se encontraron aplicaciones.
+  </p>
+</ion-content>
