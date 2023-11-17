@@ -1,6 +1,8 @@
 // search-apps.component.ts
 import { Component } from '@angular/core';
 import { AppService } from 'src/app/app.service'; // Asegúrate de poner la ruta correcta
+import { Aplicaciones } from '../core/interfaces/aplicaciones';
+import { APLICACIONES } from '../core/constantes/aplicaciones';
 
 @Component({
   selector: 'app-search-apps',
@@ -10,6 +12,7 @@ import { AppService } from 'src/app/app.service'; // Asegúrate de poner la ruta
 export class SearchAppsComponent {
   terminoBusqueda: string = '';
   aplicacionesEncontradas: string[] = [];
+  aplicaciones:Aplicaciones[] = APLICACIONES
 
   constructor(private appService: AppService) {}
 

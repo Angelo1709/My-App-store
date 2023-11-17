@@ -8,7 +8,7 @@
 
 <ion-content [fullscreen]="true">
 <div class="container">
-  <ion-card *ngFor="let item of aplicaciones">
+  <ion-card *ngFor="let item of aplicaciones" [ngClass]="{'app-gratuita': item.Precio, 'app-paga': !item.Precio}">
   <img alt="Silhouette of mountains" src="{{item.imagen}}" />
   <ion-card-header>
     <ion-card-title>{{item.nombre}}</ion-card-title>
