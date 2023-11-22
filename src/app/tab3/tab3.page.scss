@@ -9,6 +9,7 @@ ion-content {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Sombra más pronunciada
     border-radius: 20px; // Bordes redondeados
     margin: 20px;
+    
   }
   
   // Estilos para el botón de recomendaciones aleatorias
@@ -32,6 +33,14 @@ ion-card-content{
     display: flex;
     align-items: center;
     justify-content: center;
+     flex-direction: column;
+  }
+
+
+  ion-card-header{
+    display: flex;
+   
+    align-items: center;
   }
 
 
