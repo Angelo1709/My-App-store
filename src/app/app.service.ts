@@ -1,7 +1,5 @@
 // app.service.ts
 import { Injectable } from '@angular/core';
-import { aplicaciones } from 'src/app/core/constantes/aplicaciones'; // Importa la lista de aplicaciones
-
 
 @Injectable({
   providedIn: 'root'
@@ -16,3 +14,4 @@ export class AppService {
     return this.aplicaciones.filter(app => app.toLowerCase().includes(termino.toLowerCase()));
   }
 }
+

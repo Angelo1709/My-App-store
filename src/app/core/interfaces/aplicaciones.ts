@@ -6,5 +6,7 @@ export interface Aplicaciones {
     imagen:string
     tipo:string
     link:string
+    Precio: boolean
+    ruta:string
     descripcion: Descripcion[]
 }

@@ -1,19 +1,19 @@
+// search-apps.component.ts
 import { Component } from '@angular/core';
-import { AppService } from 'src/app/app.service'; // Asegúrate de poner la ruta correcta
+import { AppService } from 'src/app/app.service';
+import { Router } from '@angular/router';
 import { APLICACIONES } from '../core/constantes/aplicaciones';
-import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-apps',
   templateUrl: './search-apps.component.html',
   styleUrls: ['./search-apps.component.scss'],
 })
-
 export class SearchAppsComponent {
   terminoBusqueda: string = '';
   aplicacionesEncontradas: string[] = [];
 
-  constructor(private appService: AppService, private activatedRoute: ActivatedRoute, private router: Router) {
+  constructor(private appService: AppService, private router: Router) {
     // Puedes inicializar variables o realizar otras tareas de configuración aquí
   }
 

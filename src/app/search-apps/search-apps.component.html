@@ -1,21 +1,24 @@
 <!-- search-apps.component.html -->
 <ion-header>
   <ion-toolbar>
-    <ion-title>Buscar Aplicaciones</ion-title>
+    <ion-title ><p class="titulo">Buscar Aplicaciones</p></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-searchbar [(ngModel)]="terminoBusqueda" (input)="buscarAplicaciones(terminoBusqueda)"></ion-searchbar>
- 
 
   <ion-list *ngIf="aplicacionesEncontradas.length > 0">
     <ion-item *ngFor="let app of aplicacionesEncontradas">
      <button (click)="compararApps(app)">{{ app }}</button>
+   
+
     </ion-item>
   </ion-list>
+
 
   <p *ngIf="aplicacionesEncontradas.length === 0 && terminoBusqueda.trim() !== ''">
     No se encontraron aplicaciones.
   </p>
 </ion-content>
+
