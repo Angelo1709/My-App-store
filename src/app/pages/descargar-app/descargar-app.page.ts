@@ -2,7 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { APLICACIONES, aplicaciones } from 'src/app/core/constantes/aplicaciones';
 import { Aplicaciones } from 'src/app/core/interfaces/aplicaciones';
-import { AppService } from 'src/app/core/services/app.service';
+
 
 
 @Component({
@@ -18,7 +18,7 @@ export class DescargarAppPage implements OnInit {
   Route = inject(Router)
  
 
-  constructor(private activatedRoute:ActivatedRoute, private appService:AppService ) {
+  constructor(private activatedRoute:ActivatedRoute) {
     activatedRoute.params.subscribe(params => {
       const aplicacionEncontrada = APLICACIONES.find(aplicaciones => aplicaciones.id == params["id"]);
       console.log(aplicacionEncontrada, "esta es la app encontrada")

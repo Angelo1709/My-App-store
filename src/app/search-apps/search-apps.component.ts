@@ -1,26 +1,36 @@
-// search-apps.component.ts
 import { Component } from '@angular/core';
 import { AppService } from 'src/app/app.service'; // Asegúrate de poner la ruta correcta
-import { Aplicaciones } from '../core/interfaces/aplicaciones';
 import { APLICACIONES } from '../core/constantes/aplicaciones';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-apps',
   templateUrl: './search-apps.component.html',
   styleUrls: ['./search-apps.component.scss'],
 })
+
 export class SearchAppsComponent {
   terminoBusqueda: string = '';
   aplicacionesEncontradas: string[] = [];
-  aplicaciones:Aplicaciones[] = APLICACIONES
 
-  constructor(private appService: AppService) {}
+  constructor(private appService: AppService, private activatedRoute: ActivatedRoute, private router: Router) {
+    // Puedes inicializar variables o realizar otras tareas de configuración aquí
+  }
 
-  buscarAplicaciones() {
-    if (this.terminoBusqueda.trim() !== '') {
-      this.aplicacionesEncontradas = this.appService.buscarAplicacion(this.terminoBusqueda);
+  buscarAplicaciones(termino: string): void {
+    this.aplicacionesEncontradas = this.appService.buscarAplicacion(termino);
+  }
+
+  compararApps(appEncontrada: string): void {
+    const appEncontradaIndex = APLICACIONES.findIndex(app => app.nombre === appEncontrada);
+    if (appEncontradaIndex !== -1) {
+      const appId = APLICACIONES[appEncontradaIndex].id;
+      this.router.navigate(['descargar-app', appId]);
     } else {
-      this.aplicacionesEncontradas = [];
+      console.log('La aplicación no se encontró en la lista');
     }
+    console.log(appEncontradaIndex, "appEncontrada index")
+    console.log(this.compararApps,"este es el console log de compararApps")
   }
 }
+
