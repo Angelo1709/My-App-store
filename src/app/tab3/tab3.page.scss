@@ -4,6 +4,12 @@
   align-items: center;
   justify-content: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+      width: 90%;
+      max-width: 90%; /* Ancho máximo para pantallas grandes */
+      margin: 0 auto; /* Centrar el contenedor en la página */
+      padding: 20px;
+      box-sizing: border-box;
 }
 
 ion-content {
