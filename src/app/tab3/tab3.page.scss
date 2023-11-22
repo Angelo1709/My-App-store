@@ -1,4 +1,11 @@
 // Estilos para la página
+.titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 ion-content {
     background-color: #ffecb3; // Fondo amarillo claro
     color: #333; // Texto oscuro

@@ -1,3 +1,10 @@
+.titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 ion-card {
   width: calc(50% - 10px); /* Calcula el ancho para dos tarjetas en una fila con espacio entre ellas */
   margin: 0 5px; /* Añade un pequeño espacio entre las tarjetas */
