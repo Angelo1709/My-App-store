@@ -11,36 +11,42 @@ import { NavController } from '@ionic/angular';
 export class Tab3Page {
   aplicaciones:Aplicaciones[] = APLICACIONES
 
-  constructor(private navCtrl:NavController) { 
-
-
-
-
-    
-  }
+  constructor(private navCtrl:NavController) {}
+  
+  
   appRecomendada: Aplicaciones | undefined;
   mostrarDiv: boolean = false;
-  botonClicadoMg: boolean = false
-  botonNoSeVe:boolean = false
+  rojo:boolean = false
+  verde:boolean = false
 
   obtenerRecomendacionAleatoria() {
     const indiceAleatorio = Math.floor(Math.random() * this.aplicaciones.length);
     this.appRecomendada = this.aplicaciones[indiceAleatorio];
   
-  
-   
-
-    
       this.mostrarDiv = !this.mostrarDiv;
      
-    
   }
 
-  apretarBotonMg() {
-    if (this.mostrarDiv) {
-      this.botonClicadoMg = !this.botonClicadoMg;
+  apretarDislike(){
+    this.rojo = !this.rojo
+
+    if (this.rojo) {
+      this.verde = false;
     }
   }
+
+  apretarMg() {
+      this.verde = !this.verde;
+      if (this.verde) {
+        this.rojo = false;
+      }
+  }
+
+  sinColor(){
+    this.rojo = false;
+    this.verde = false;
+  }
+
 
   descargarApp(id:Number){
 
