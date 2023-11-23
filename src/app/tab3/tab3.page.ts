@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Aplicaciones } from '../core/interfaces/aplicaciones';
 import { APLICACIONES } from '../core/constantes/aplicaciones';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab3',
@@ -10,7 +11,7 @@ import { APLICACIONES } from '../core/constantes/aplicaciones';
 export class Tab3Page {
   aplicaciones:Aplicaciones[] = APLICACIONES
 
-  constructor() { 
+  constructor(private navCtrl:NavController) { 
 
 
 
@@ -41,4 +42,12 @@ export class Tab3Page {
     }
   }
 
+  descargarApp(id:Number){
+
+    this.navCtrl.navigateForward(`/descargar-app/${id}`);
+
+
+  }
+
 }
+
