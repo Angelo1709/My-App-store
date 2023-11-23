@@ -6,7 +6,7 @@
 
   <ion-list *ngIf="aplicacionesEncontradas.length > 0">
     <ion-item *ngFor="let app of aplicacionesEncontradas">
-     <button (click)="compararApps(app)">{{ app }}</button>
+     <button class="texto" (click)="compararApps(app)">{{ app }}</button>
    
 
     </ion-item>
