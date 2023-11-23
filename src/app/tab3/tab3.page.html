@@ -12,7 +12,7 @@
   <ion-content>
     <ion-button id="btnAleatorio" expand="full" (click)="obtenerRecomendacionAleatoria()">Obtener Recomendacion del dia</ion-button>
   
-    <ion-card *ngIf="appRecomendada">
+    <button *ngIf="appRecomendada" (click)="descargarApp(appRecomendada.id)" ><ion-card>
       <ion-card-header>
         Aplicación Recomendada
       </ion-card-header>
@@ -22,6 +22,9 @@
         <p>Categoría: {{ appRecomendada.tipo }}</p>
       </ion-card-content>
     </ion-card>
+  </button>
+
+
    
 
 
