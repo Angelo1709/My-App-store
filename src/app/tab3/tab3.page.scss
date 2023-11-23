@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
+    flex-direction: column;
       font-size:large;
       max-width: 1200px; /* Ancho máximo para pantallas grandes */
       margin: 0 auto; /* Centrar el contenedor en la página */
@@ -12,14 +12,14 @@
       box-sizing: border-box;
 }
 
+button{
+  background-color: transparent;
+}
+
 ion-content {
     background-color: #ffecb3; // Fondo amarillo claro
     color: #333; // Texto oscuro
   }
-
-button{
-  background-color: transparent;
-}
   
   ion-card {
     background-color: #fff; // Fondo blanco para el card
@@ -60,8 +60,40 @@ ion-card-content{
     align-items: center;
   }
 
+  #nombre{
+    margin-top: 10px;
+  }
 
  
+.likes img{
+  background-color: transparent;
+  height: 30px;
+  padding: 4px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.botonesLike{
+  margin: 10px;
+}
+
+
+.colorVerde{
+  background-color: green;
+  border-radius: 10px;
+}
+
+.colorRojo{
+  background-color: red;
+  border-radius: 10px;
+}
+
+.contenedorBotones{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
 
   
 
