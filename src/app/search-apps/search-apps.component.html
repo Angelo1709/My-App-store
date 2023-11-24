@@ -4,7 +4,7 @@
 <ion-content>
   <ion-searchbar [(ngModel)]="terminoBusqueda" (input)="buscarAplicaciones(terminoBusqueda)"></ion-searchbar>
 
-  <ion-list *ngIf="aplicacionesEncontradas.length > 0">
+  <ion-list *ngIf="terminoBusqueda">
     <ion-item *ngFor="let app of aplicacionesEncontradas">
      <button class="texto" (click)="compararApps(app)">{{ app }}</button>
    
