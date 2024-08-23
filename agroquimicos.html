@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de agroquimicos</title>
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="variables.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="/imagenes/LA DICHOSA_smooth_x4_988x308.png" alt="Logo de la empresa"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="/contactanos.html">Contáctanos</a></li>
+                <li><a href="/productos.html">Productos</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="linea"></div>
+
+
+
+
+
+
+
+    <div class="input"><input type="text" id="buscador" placeholder="Buscar productos..." onkeyup="filtrarCatalogo()"></div>
+    <h1>Catálogo de Productos</h1>
+    <div id="catalogo"></div>
+    
+    <script src="catalogoagro.js"></script>
+
+    <footer>© 2024 La Dichosa. Todos los derechos reservados.</footer>
+</body>
+</html>

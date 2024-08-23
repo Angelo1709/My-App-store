@@ -1,0 +1,129 @@
+
+    /*copiado header*/
+
+    .Home{
+        margin-right: 10px;
+    }
+    
+   
+    .linea{
+       
+        height: 2px;
+        color: black;
+        background-color: black;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        
+        color: rgb(0, 0, 0);
+        background-color: rgb(180 28 34);
+    }
+    
+    .logo img {
+        width: 120px; /* Ajusta el tamaño del logo según tus necesidades */
+        height: auto;
+        margin: 0px;
+    }
+    
+    .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .menu ul li {
+        display: inline;
+    }
+    
+    .menu ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    .menu ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #777;
+    }
+    
+    @media (max-width: 768px) {
+        
+        .menu ul{
+            display: flex;
+        }
+    
+        header{
+    
+            display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        }
+    
+       
+    
+        .menu ul li {
+            margin-bottom: 10px;
+        }
+
+        .menu ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 10px;
+            margin: 5px;
+        }
+    
+        .logo img {
+            width: 90px;
+        }
+    
+        
+    
+        .info p {
+            font-size: 14px;
+        }
+    
+       
+    
+        body{
+            margin: 0px;
+        }
+
+        footer{
+            font-size: 10px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        
+        
+        
+        .menu ul {
+            
+            align-items: center;
+        }
+    
+        .menu ul li {
+            margin-bottom: 10px;
+        }
+    
+        .logo img {
+            width: 90px; /* Ajusta el tamaño del logo en pantallas más pequeñas */
+        }
+    
+        
+    }
+    

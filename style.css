@@ -1,0 +1,153 @@
+:root{
+    
+    --fondo: url(/imagenes/Soja-Desab.jpg);
+
+}
+
+.menu button{
+    display: none;
+}
+
+.Home{
+    margin-right: 10px;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.linea{
+   
+    height: 2px;
+    color: rgb(178, 5, 5);
+    background-color: rgb(196, 16, 16);
+}
+
+
+
+
+
+.informacion{
+    text-align: center; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.informacion h1{
+    margin: 90px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    padding: 200px;
+    background-image: url(/imagenes/title-image-field-crops.jpg);
+    image-rendering: crisp-edges; /* Mejora la nitidez de la imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+.fotosmarcas{
+    display: flex;
+    justify-content: center;
+    width: 10px;
+    
+
+}
+
+div img{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+
+    
+}
+
+.fotosmarca img {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra a las imágenes */
+    border-radius: 8px; /* Opcional: redondea las esquinas de las imágenes */
+}
+
+.fondobeige{
+    margin: 30px;
+}
+
+
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+   
+   
+    .informacion h1 {
+        display: flex;
+        font-size: 40px; /* Reduce el tamaño del texto en pantallas más pequeñas */
+        background-image: url(/imagenes/title-image-field-crops-responsive.jpg);
+        padding: 100px;
+        margin: 40px 0px;
+    }
+
+    .fotosmarca img {
+        width: 120px; /* Ajusta el tamaño de las imágenes en pantallas más pequeñas */
+        height: 120px;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0; /* Elimina el margen en pantallas más pequeñas */
+    }
+
+    .informacion h1 {
+        font-size: 40px; /* Ajusta el tamaño del texto aún más en pantallas muy pequeñas */
+    }
+
+    .fotosmarca img {
+        width: 100px; /* Ajusta el tamaño de las imágenes en pantallas muy pequeñas */
+        height: 100px;
+    }
+    .menu ul{
+        display: none;
+    }
+
+
+
+   
+}
+
+

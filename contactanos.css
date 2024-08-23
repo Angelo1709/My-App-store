@@ -1,0 +1,322 @@
+div img{
+    width: 500px;
+    height: 500px;
+
+}
+
+.mapaAlcorta{
+    margin: 10px;
+    border-color: black;
+    border-width: 10px;
+}
+
+.separador{
+    width: 100px;
+}
+
+
+
+h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.info p{
+    text-align: left;
+    justify-content: center;
+    font-size: smaller;
+    margin: 4%;
+    
+}
+
+.mapa-container{
+    display: flex;
+    justify-content: center;
+    margin: 0% 20%;
+    padding: 1%;
+    background-color: rgb(215, 215, 215);
+    border-radius: 1%;
+    
+}
+
+.mapa-container-santa{
+    display: flex;
+    justify-content: center;
+    margin: 1% 20%;
+    padding: 1%;
+    background-color: rgb(215, 215, 215);
+    border-radius: 1%;
+    flex-direction: row-reverse;
+    
+}
+
+.sucursales{
+    background-color: rgb(215, 215, 215);
+    text-align: left;
+    border-left: 10%;
+    
+    
+}
+
+.sucursales h3{
+    margin: 4%;
+}
+
+
+
+
+/*copiado header*/
+
+body {
+    margin: 0px;
+   
+    
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+.linea{
+   
+    height: 2px;
+    color: black;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    
+    color: rgb(0, 0, 0);
+}
+
+.logo img {
+    width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: auto;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.recuadro {
+    display: flex;
+    flex-wrap: wrap;
+    
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+    margin: 0px 110px;
+}
+
+.Home{
+    margin-right: 10px;
+}
+
+
+
+
+/* Media Queries para hacer la página responsive */
+
+@media (max-width: 768px) {
+
+    .mapa-container{
+        display: flex;
+        justify-content: center;
+        
+        padding: 1%;
+        
+        border-radius: 1%;
+        
+    }
+
+    .mapa-container-santa{
+        display: flex;
+        justify-content: center;
+       
+        padding: 1%;
+        
+        border-radius: 1%;
+        flex-direction: row-reverse;
+        
+    }
+
+    h3{
+        margin: 0px;
+    }
+
+    header{
+
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    }
+
+   
+
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .info h2 {
+        font-size: 20px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+    .mapa-container iframe,
+    .mapa-container-santa iframe {
+        height: 250px;
+    }
+
+    body{
+        margin: 0px;
+    }
+
+    .recuadro{
+        margin: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .mapa-container{
+        display: flex;
+        justify-content: center;
+        
+        padding: 1%;
+        
+        border-radius: 1%;
+        
+    }
+
+    .recuadro{
+        margin: 0px;
+    }
+
+    body{
+        margin: 0px;
+    }
+
+    .mapa-container-santa{
+        display: flex;
+        justify-content: center;
+       
+        padding: 1%;
+                
+        border-radius: 1%;
+        flex-direction: row-reverse;
+        
+    }
+    
+    .sucursales h3{
+        margin: 0px;
+    }
+    
+    .menu ul {
+        
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        width: 90px; /* Ajusta el tamaño del logo en pantallas más pequeñas */
+    }
+
+    .info h2 {
+        font-size: 18px;
+    }
+
+    .info p {
+        font-size: 12px;
+    }
+
+    .mapa-container iframe,
+    .mapa-container-santa iframe {
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* de prueba */
+
+
+/* Estilos generales */
+
+/* Contenedor de recuadros */
+.recuadros-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los recuadros */
+    padding: 20px;
+}
+
+/* Recuadro principal */
+
+
+/* Estilos para la información */
+.info {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.info h3 {
+    margin-top: 0;
+    color: #db3434;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+/* Estilos para el mapa */
+.mapa {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+

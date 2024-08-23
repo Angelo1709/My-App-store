@@ -1,0 +1,415 @@
+
+
+
+
+/*copiado header*/
+
+
+body {
+    margin: 0px;
+    
+  
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen de fondo */
+    background-attachment: fixed;
+}
+
+.linea{
+   
+    height: 2px;
+    color: black;
+    background-color: black;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    background-color: antiquewhite;
+    
+    color: rgb(0, 0, 0);
+}
+
+.logo img {
+    width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: auto;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.agrosemillas button{
+
+    height: 200px;
+    width: 200px;
+    margin: 30px;
+    margin-top: 50px;
+    border-radius: 10%;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra a las imágenes */
+
+}
+
+.semillas{
+    background-image: url(/imagenes/semillas.png);
+    background-position: center;
+    background-size: cover;
+    border-width: 1px;
+    border-color: black;
+    
+}
+
+.agroquimicos {
+    background-image: url(/imagenes/agroquimicos.avif);
+    background-position: center;
+    background-size: cover;
+    border-width: 1px;
+    border-color: black;
+}
+
+.agroquimicos p{
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+
+
+
+
+
+a.consultar-cat{
+   
+    padding: 10px;
+    background-color: rgba(255, 187, 0, 0.681);
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.container {
+    margin: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: beige;
+    transform: translateX(-100vw); /* Comienza fuera de la pantalla, en el costado izquierdo */
+    animation: slideInFromLeft 1s ease-out forwards; /* Aplica la animación */
+}
+
+@keyframes slideInFromLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Se desplaza a su posición original */
+    }
+}
+
+
+.texto {
+    max-width: 50%;
+    margin: 50px;
+}
+
+.texto h1 {
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.text p {
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.image {
+    max-width: 50%;
+    width: 1300px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container-2{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: beige;
+    transform: translateX(+100vw); /* Comienza fuera de la pantalla, en el costado izquierdo */
+    animation: slideInFromLeft 1s ease-out forwards; /* Aplica la animación */ 
+    
+}
+
+.text-2{
+    max-width: 50%;
+    margin-left: 50px;
+}
+
+.text-2 h1{
+    font-size: 62px;
+}
+
+.image-2 {
+    position: relative;
+  }
+
+
+  .boton-superpuesto {
+    position: absolute;
+    top: 20%; /* Ajusta según la posición que desees */
+    left: 15%; /* Ajusta según la posición que desees */
+    background-color: rgb(245, 245, 220, 0.6); /* Color del botón */
+    color: rgb(0, 0, 0);
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-superpuesto:hover {
+    background-color: rgba(255, 187, 0, 0.681); /* Cambio de color al hacer hover */
+  }
+
+
+  .boton-semillas {
+    position: absolute;
+    top: 70%; /* Ajusta según la posición que desees */
+    left: 70%; /* Ajusta según la posición que desees */
+    background-color: rgb(245, 245, 220, 0.6); /* Color del botón */
+    color: rgb(0, 0, 0);
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .boton-semillas:hover {
+    background-color: rgba(255, 187, 0, 0.681); /* Cambio de color al hacer hover */
+  }
+
+  .texto-responsive{
+    display: none;
+  }
+  
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .texto-responsive{
+        display: flex;
+        align-items: center;
+    }
+
+    .texto-responsive h1{
+        text-align: center;
+    }
+
+    .container-2{
+        background-color:  white;
+    }
+
+    header{
+
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    }
+
+    
+
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .info h2 {
+        font-size: 20px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+   
+
+    body{
+        margin: 0px;
+    }
+
+    .texto {
+        margin: 0px;
+        display: flex;
+        max-width: 1000px;
+        margin-left: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: centers;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .texto h1{
+        font-size: 34px;
+        margin-top: 5px;
+        text-align: center;
+
+    }
+
+    .texto p{
+        font-size: 10px;
+        margin: 0px;
+        text-align: center;
+    }
+    
+    .consultar-cat{
+        margin: 0px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .container{
+        padding: 100px;
+        margin: 25px 0px;
+        display: flex;
+        flex-wrap: wrap;
+       
+        background-image: url(/imagenes/catalogo\ -\ copia\ \(2\).png);
+        background-position: 75%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translateX(0vw); /* Comienza fuera de la pantalla, en el costado izquierdo */
+        animation: slideInFromLeft none; /* Aplica la animación */
+
+    }
+
+    .container img{
+        
+        margin-top: 5px;
+        display: none;
+    }  
+
+    .texto a{
+        padding: 5px;
+        text-align: center;
+        margin: 10px;
+        
+    }
+    
+    .container-2 img{
+        margin-top: 5px;
+        max-width: 100%;
+        
+    }
+
+    .container-2{
+        padding: 0px;
+    }
+
+    .container-2 h1{
+        font-size: 28px;
+        margin: 0px;
+        display: none;
+    }
+
+    .container-2 a{
+        padding: 5px;
+        font-size: 10px;
+       
+    }
+
+    .boton-superpuesto{
+        left: 5%;
+        top: 10%;
+    }
+
+    .text-2 h1{
+        margin: 10px;
+    }
+
+    .text-2{
+       
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+   
+    
+    .menu ul {
+        
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        width: 90px; /* Ajusta el tamaño del logo en pantallas más pequeñas */
+    }
+
+    .text{
+        margin-left: 0px;
+    }
+
+    
+
+    
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+  
+
